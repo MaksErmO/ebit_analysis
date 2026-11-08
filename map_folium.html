@@ -1,0 +1,3336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ab75c81f2e60e98441f1bfa47c9bcdfa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ab75c81f2e60e98441f1bfa47c9bcdfa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ab75c81f2e60e98441f1bfa47c9bcdfa = L.map(
+                "map_ab75c81f2e60e98441f1bfa47c9bcdfa",
+                {
+                    center: [60.0, 90.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+
+            
+
+        
+    
+            var tile_layer_20aa5e71f74fd5e5e20134ebfea1f380 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_20aa5e71f74fd5e5e20134ebfea1f380.addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+            var circle_marker_9903f101c90305ae6bdd2d7c446a0842 = L.circleMarker(
+                [55.80438, 37.5903637],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_b07008c57a13ab30449edf90e9b9e4e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bdc8cd6da171ded5540ca2c8339fbcab = $(`<div id="html_bdc8cd6da171ded5540ca2c8339fbcab" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 9715426146<br>             <b>Средний EBIT:</b> 1 792 900 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Новодмитровская, д 2 к 2, помещ XXXI, ком 11         </div>         </div>`)[0];
+                popup_b07008c57a13ab30449edf90e9b9e4e2.setContent(html_bdc8cd6da171ded5540ca2c8339fbcab);
+            
+        
+
+        circle_marker_9903f101c90305ae6bdd2d7c446a0842.bindPopup(popup_b07008c57a13ab30449edf90e9b9e4e2)
+        ;
+
+        
+    
+    
+            circle_marker_9903f101c90305ae6bdd2d7c446a0842.bindTooltip(
+                `<div>
+                     ИНН: 9715426146
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93dc8502d1fa62fcf8c2f3a875f00061 = L.circleMarker(
+                [55.6315059, 37.8651753],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.600766666666667, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_65253fe1ac166ff7ec4505b3ae2ff0e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa3406bd0635f70952397e3e2f9c65ab = $(`<div id="html_fa3406bd0635f70952397e3e2f9c65ab" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5027006369<br>             <b>Средний EBIT:</b> 318 023 тыс. руб.<br>             <b>Адрес:</b> Московская обл, г Люберцы, г Дзержинский, ул Угрешская, д 30, помещ 700         </div>         </div>`)[0];
+                popup_65253fe1ac166ff7ec4505b3ae2ff0e4.setContent(html_fa3406bd0635f70952397e3e2f9c65ab);
+            
+        
+
+        circle_marker_93dc8502d1fa62fcf8c2f3a875f00061.bindPopup(popup_65253fe1ac166ff7ec4505b3ae2ff0e4)
+        ;
+
+        
+    
+    
+            circle_marker_93dc8502d1fa62fcf8c2f3a875f00061.bindTooltip(
+                `<div>
+                     ИНН: 5027006369
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dfc252e9a90cdaa72789a6e57539d469 = L.circleMarker(
+                [55.7788836, 37.690547],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.4457, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_d88cb08ecfa8d35e0d6bbcf86416e918 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_625c7a82be847d3ed11f63a48afe8299 = $(`<div id="html_625c7a82be847d3ed11f63a48afe8299" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7718874505<br>             <b>Средний EBIT:</b> 163 371 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Бакунинская, д 69 стр 1, помещ 2А         </div>         </div>`)[0];
+                popup_d88cb08ecfa8d35e0d6bbcf86416e918.setContent(html_625c7a82be847d3ed11f63a48afe8299);
+            
+        
+
+        circle_marker_dfc252e9a90cdaa72789a6e57539d469.bindPopup(popup_d88cb08ecfa8d35e0d6bbcf86416e918)
+        ;
+
+        
+    
+    
+            circle_marker_dfc252e9a90cdaa72789a6e57539d469.bindTooltip(
+                `<div>
+                     ИНН: 7718874505
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a73d9a6797f33c6ab7622cf105637417 = L.circleMarker(
+                [59.908944, 30.348172],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.70122, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_efedf0ff57534ea04023e2135320bb01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33b6aa4fe228abf5e2f0025fa240b811 = $(`<div id="html_33b6aa4fe228abf5e2f0025fa240b811" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7816131635<br>             <b>Средний EBIT:</b> 141 037 тыс. руб.<br>             <b>Адрес:</b> г Санкт-Петербург, Лиговский пр-кт, д 200А литера а, помещ 7Н         </div>         </div>`)[0];
+                popup_efedf0ff57534ea04023e2135320bb01.setContent(html_33b6aa4fe228abf5e2f0025fa240b811);
+            
+        
+
+        circle_marker_a73d9a6797f33c6ab7622cf105637417.bindPopup(popup_efedf0ff57534ea04023e2135320bb01)
+        ;
+
+        
+    
+    
+            circle_marker_a73d9a6797f33c6ab7622cf105637417.bindTooltip(
+                `<div>
+                     ИНН: 7816131635
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ef5dd7b6626f766863aa60df38f53a0 = L.circleMarker(
+                [45.0737645, 38.9797299],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5009266666666665, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_ff486b9f0b218634aadcc7abd1e873b1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16bc009dfbe153f3d611edb4b3c82b75 = $(`<div id="html_16bc009dfbe153f3d611edb4b3c82b75" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2311011320<br>             <b>Средний EBIT:</b> 135 028 тыс. руб.<br>             <b>Адрес:</b> г Краснодар, проезд им. Репина, д 22, офис 54         </div>         </div>`)[0];
+                popup_ff486b9f0b218634aadcc7abd1e873b1.setContent(html_16bc009dfbe153f3d611edb4b3c82b75);
+            
+        
+
+        circle_marker_1ef5dd7b6626f766863aa60df38f53a0.bindPopup(popup_ff486b9f0b218634aadcc7abd1e873b1)
+        ;
+
+        
+    
+    
+            circle_marker_1ef5dd7b6626f766863aa60df38f53a0.bindTooltip(
+                `<div>
+                     ИНН: 2311011320
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bcda875db96abc7fc77414d488edc10d = L.circleMarker(
+                [55.7573617, 37.6063467],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.459440000000001, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_bec73cdc97de34ce9754a3796ee566d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f99ff0704eaeef42a21ae60e6e556756 = $(`<div id="html_f99ff0704eaeef42a21ae60e6e556756" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7703595570<br>             <b>Средний EBIT:</b> 133 783 тыс. руб.<br>             <b>Адрес:</b> г Москва, Брюсов пер, д 2/14 стр 5         </div>         </div>`)[0];
+                popup_bec73cdc97de34ce9754a3796ee566d4.setContent(html_f99ff0704eaeef42a21ae60e6e556756);
+            
+        
+
+        circle_marker_bcda875db96abc7fc77414d488edc10d.bindPopup(popup_bec73cdc97de34ce9754a3796ee566d4)
+        ;
+
+        
+    
+    
+            circle_marker_bcda875db96abc7fc77414d488edc10d.bindTooltip(
+                `<div>
+                     ИНН: 7703595570
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_320668e65fdc8c42d206d917f4cb983c = L.circleMarker(
+                [59.94321, 30.26187],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_75c04e4df8cc0f97a6cfa8933ee85ff8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_286c7ff8f0ecd085ea512bea2ce59811 = $(`<div id="html_286c7ff8f0ecd085ea512bea2ce59811" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7810255553<br>             <b>Средний EBIT:</b> 119 154 тыс. руб.<br>             <b>Адрес:</b> г Санкт-Петербург, пр-кт Малый В.О., д 48 к 2 литера а, помещ 12-Н         </div>         </div>`)[0];
+                popup_75c04e4df8cc0f97a6cfa8933ee85ff8.setContent(html_286c7ff8f0ecd085ea512bea2ce59811);
+            
+        
+
+        circle_marker_320668e65fdc8c42d206d917f4cb983c.bindPopup(popup_75c04e4df8cc0f97a6cfa8933ee85ff8)
+        ;
+
+        
+    
+    
+            circle_marker_320668e65fdc8c42d206d917f4cb983c.bindTooltip(
+                `<div>
+                     ИНН: 7810255553
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b178776da7fe9b5e1c50384a66aa906 = L.circleMarker(
+                [57.623165, 39.878767],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_fc77a1bd3c897e451f1b5b52e915d88f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_317ebc3bc8e35466b584e0436d9cffff = $(`<div id="html_317ebc3bc8e35466b584e0436d9cffff" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3525048992<br>             <b>Средний EBIT:</b> 115 009 тыс. руб.<br>             <b>Адрес:</b> г Ярославль, ул Республиканская, д 81 к 2, кв 49         </div>         </div>`)[0];
+                popup_fc77a1bd3c897e451f1b5b52e915d88f.setContent(html_317ebc3bc8e35466b584e0436d9cffff);
+            
+        
+
+        circle_marker_5b178776da7fe9b5e1c50384a66aa906.bindPopup(popup_fc77a1bd3c897e451f1b5b52e915d88f)
+        ;
+
+        
+    
+    
+            circle_marker_5b178776da7fe9b5e1c50384a66aa906.bindTooltip(
+                `<div>
+                     ИНН: 3525048992
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29cd07043fd7132a428ce48dd5d7d608 = L.circleMarker(
+                [55.962597, 37.52221],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_58f22523d460241e9af2c92983adb59b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c16e811a39aef7d431c03742e78e0e0 = $(`<div id="html_2c16e811a39aef7d431c03742e78e0e0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5025012896<br>             <b>Средний EBIT:</b> 95 299 тыс. руб.<br>             <b>Адрес:</b> 141704, МОСКОВСКАЯ ОБЛАСТЬ, Г.О. ДОЛГОПРУДНЫЙ, Г. ДОЛГОПРУДНЫЙ, УЛ. НАБЕРЕЖНАЯ, Д. 23, К. 1, ПОМЕЩ. НП 6         </div>         </div>`)[0];
+                popup_58f22523d460241e9af2c92983adb59b.setContent(html_2c16e811a39aef7d431c03742e78e0e0);
+            
+        
+
+        circle_marker_29cd07043fd7132a428ce48dd5d7d608.bindPopup(popup_58f22523d460241e9af2c92983adb59b)
+        ;
+
+        
+    
+    
+            circle_marker_29cd07043fd7132a428ce48dd5d7d608.bindTooltip(
+                `<div>
+                     ИНН: 5025012896
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c8d28027f7a8bdd624d69b0cb8a0dae = L.circleMarker(
+                [55.7703314, 37.5248176],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_82b37b0792ce8790556f2bb65265d567 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae73d5002be0af828c4812f4a9c9e09d = $(`<div id="html_ae73d5002be0af828c4812f4a9c9e09d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7714046959<br>             <b>Средний EBIT:</b> 77 224 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул 5-я Магистральная, д 4         </div>         </div>`)[0];
+                popup_82b37b0792ce8790556f2bb65265d567.setContent(html_ae73d5002be0af828c4812f4a9c9e09d);
+            
+        
+
+        circle_marker_1c8d28027f7a8bdd624d69b0cb8a0dae.bindPopup(popup_82b37b0792ce8790556f2bb65265d567)
+        ;
+
+        
+    
+    
+            circle_marker_1c8d28027f7a8bdd624d69b0cb8a0dae.bindTooltip(
+                `<div>
+                     ИНН: 7714046959
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c91027fbf6e1f360a1279cd4c7f70160 = L.circleMarker(
+                [56.497491, 84.991235],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_71eeec7c5482b0a949e978d14f677e63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05bdedec6b22f4ad2d8ca9c331a48cc9 = $(`<div id="html_05bdedec6b22f4ad2d8ca9c331a48cc9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7017334036<br>             <b>Средний EBIT:</b> 76 157 тыс. руб.<br>             <b>Адрес:</b> г Томск, ул Пушкина, д 63Г         </div>         </div>`)[0];
+                popup_71eeec7c5482b0a949e978d14f677e63.setContent(html_05bdedec6b22f4ad2d8ca9c331a48cc9);
+            
+        
+
+        circle_marker_c91027fbf6e1f360a1279cd4c7f70160.bindPopup(popup_71eeec7c5482b0a949e978d14f677e63)
+        ;
+
+        
+    
+    
+            circle_marker_c91027fbf6e1f360a1279cd4c7f70160.bindTooltip(
+                `<div>
+                     ИНН: 7017334036
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c0846ad6cf8a7709459f77587449ddd = L.circleMarker(
+                [59.900412, 30.298638],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_3398ad5da5552e8448ee9d3282b99e6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_969013017bce0bf0d31e622e2641c7d1 = $(`<div id="html_969013017bce0bf0d31e622e2641c7d1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7802148357<br>             <b>Средний EBIT:</b> 73 741 тыс. руб.<br>             <b>Адрес:</b> г Санкт-Петербург, Митрофаньевское шоссе, д 5 к 2 литера б         </div>         </div>`)[0];
+                popup_3398ad5da5552e8448ee9d3282b99e6a.setContent(html_969013017bce0bf0d31e622e2641c7d1);
+            
+        
+
+        circle_marker_1c0846ad6cf8a7709459f77587449ddd.bindPopup(popup_3398ad5da5552e8448ee9d3282b99e6a)
+        ;
+
+        
+    
+    
+            circle_marker_1c0846ad6cf8a7709459f77587449ddd.bindTooltip(
+                `<div>
+                     ИНН: 7802148357
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2ab9db0fee78315bde608eedcaa066e = L.circleMarker(
+                [55.7665848, 37.6223619],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_d2ad82739e743bbd8357d4d488d1fb14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85879de73c6f0b6ec23545f596cc9e26 = $(`<div id="html_85879de73c6f0b6ec23545f596cc9e26" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5044125655<br>             <b>Средний EBIT:</b> 71 560 тыс. руб.<br>             <b>Адрес:</b> г Москва, Трубная пл, д 2, помещ 14/1П         </div>         </div>`)[0];
+                popup_d2ad82739e743bbd8357d4d488d1fb14.setContent(html_85879de73c6f0b6ec23545f596cc9e26);
+            
+        
+
+        circle_marker_d2ab9db0fee78315bde608eedcaa066e.bindPopup(popup_d2ad82739e743bbd8357d4d488d1fb14)
+        ;
+
+        
+    
+    
+            circle_marker_d2ab9db0fee78315bde608eedcaa066e.bindTooltip(
+                `<div>
+                     ИНН: 5044125655
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c0c522bf5f496685c353b1c8382c7d6 = L.circleMarker(
+                [55.875965, 37.588108],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_1dd08d4dbb372e15410c028f4b3b5ca2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f37b9a294c750c95e118290be3a4f617 = $(`<div id="html_f37b9a294c750c95e118290be3a4f617" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7724745755<br>             <b>Средний EBIT:</b> 68 012 тыс. руб.<br>             <b>Адрес:</b> г Москва, Алтуфьевское шоссе, д 48 к 1, помещ I офис 901         </div>         </div>`)[0];
+                popup_1dd08d4dbb372e15410c028f4b3b5ca2.setContent(html_f37b9a294c750c95e118290be3a4f617);
+            
+        
+
+        circle_marker_2c0c522bf5f496685c353b1c8382c7d6.bindPopup(popup_1dd08d4dbb372e15410c028f4b3b5ca2)
+        ;
+
+        
+    
+    
+            circle_marker_2c0c522bf5f496685c353b1c8382c7d6.bindTooltip(
+                `<div>
+                     ИНН: 7724745755
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc92c7c6ad065e8abf2d12a727d00657 = L.circleMarker(
+                [55.7840783, 37.5608293],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_dfe2963a2982b3d3b49387a7d72133d3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f872d8901671dde1a2e1ca58ec2d0573 = $(`<div id="html_f872d8901671dde1a2e1ca58ec2d0573" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7709211195<br>             <b>Средний EBIT:</b> 67 436 тыс. руб.<br>             <b>Адрес:</b> г Москва, Ленинградский пр-кт, д 31 стр 3         </div>         </div>`)[0];
+                popup_dfe2963a2982b3d3b49387a7d72133d3.setContent(html_f872d8901671dde1a2e1ca58ec2d0573);
+            
+        
+
+        circle_marker_fc92c7c6ad065e8abf2d12a727d00657.bindPopup(popup_dfe2963a2982b3d3b49387a7d72133d3)
+        ;
+
+        
+    
+    
+            circle_marker_fc92c7c6ad065e8abf2d12a727d00657.bindTooltip(
+                `<div>
+                     ИНН: 7709211195
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ff97173874196136e68fa34b101acc39 = L.circleMarker(
+                [44.5505036, 38.1278135],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_bf5f56c0e89f61b8001cbe7fdcac7122 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d880b5f3b542d196f08222d9781e962 = $(`<div id="html_2d880b5f3b542d196f08222d9781e962" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2304016990<br>             <b>Средний EBIT:</b> 64 467 тыс. руб.<br>             <b>Адрес:</b> Краснодарский край, г Геленджик, тер Южная промышленная зона, д 12         </div>         </div>`)[0];
+                popup_bf5f56c0e89f61b8001cbe7fdcac7122.setContent(html_2d880b5f3b542d196f08222d9781e962);
+            
+        
+
+        circle_marker_ff97173874196136e68fa34b101acc39.bindPopup(popup_bf5f56c0e89f61b8001cbe7fdcac7122)
+        ;
+
+        
+    
+    
+            circle_marker_ff97173874196136e68fa34b101acc39.bindTooltip(
+                `<div>
+                     ИНН: 2304016990
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51ccd5a60cf47945523ff88a935929a2 = L.circleMarker(
+                [56.4485911, 52.2053855],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_68d12d89bba2f94fd4d338fb9375e2c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c90fd3f6172176216364fdf4a362a415 = $(`<div id="html_c90fd3f6172176216364fdf4a362a415" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 1830000270<br>             <b>Средний EBIT:</b> 62 113 тыс. руб.<br>             <b>Адрес:</b> Удмуртская Респ, г Можга, ул Устюжанина, зд 5         </div>         </div>`)[0];
+                popup_68d12d89bba2f94fd4d338fb9375e2c4.setContent(html_c90fd3f6172176216364fdf4a362a415);
+            
+        
+
+        circle_marker_51ccd5a60cf47945523ff88a935929a2.bindPopup(popup_68d12d89bba2f94fd4d338fb9375e2c4)
+        ;
+
+        
+    
+    
+            circle_marker_51ccd5a60cf47945523ff88a935929a2.bindTooltip(
+                `<div>
+                     ИНН: 1830000270
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8674fca53ef955c6caddef6b9e2b24b8 = L.circleMarker(
+                [56.1512456, 40.4037118],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_372d0c6d370a6b022b7c4c66c87b67a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d244e634b4d73bdfa0b5a96980bce40d = $(`<div id="html_d244e634b4d73bdfa0b5a96980bce40d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3328412522<br>             <b>Средний EBIT:</b> 62 098 тыс. руб.<br>             <b>Адрес:</b> г Владимир, ул Почаевский Овраг, д 1, офис 1         </div>         </div>`)[0];
+                popup_372d0c6d370a6b022b7c4c66c87b67a0.setContent(html_d244e634b4d73bdfa0b5a96980bce40d);
+            
+        
+
+        circle_marker_8674fca53ef955c6caddef6b9e2b24b8.bindPopup(popup_372d0c6d370a6b022b7c4c66c87b67a0)
+        ;
+
+        
+    
+    
+            circle_marker_8674fca53ef955c6caddef6b9e2b24b8.bindTooltip(
+                `<div>
+                     ИНН: 3328412522
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4464ae6c8d311f8cae16aa751643afef = L.circleMarker(
+                [56.1482996, 40.397582],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_bec7085d0e68c1218b660a53ccb6030b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d361c0a633a9531bbec91a3f670d1d11 = $(`<div id="html_d361c0a633a9531bbec91a3f670d1d11" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3327332190<br>             <b>Средний EBIT:</b> 52 775 тыс. руб.<br>             <b>Адрес:</b> г Владимир, ул Юрьевская, д 9         </div>         </div>`)[0];
+                popup_bec7085d0e68c1218b660a53ccb6030b.setContent(html_d361c0a633a9531bbec91a3f670d1d11);
+            
+        
+
+        circle_marker_4464ae6c8d311f8cae16aa751643afef.bindPopup(popup_bec7085d0e68c1218b660a53ccb6030b)
+        ;
+
+        
+    
+    
+            circle_marker_4464ae6c8d311f8cae16aa751643afef.bindTooltip(
+                `<div>
+                     ИНН: 3327332190
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aea57847482936d9797b82a2475ee484 = L.circleMarker(
+                [55.7093843, 37.442338],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_f951c91bd7720f00ef7447a0f3ddc6f3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_807fd30077a3e6bf40f95abaf38d0cc1 = $(`<div id="html_807fd30077a3e6bf40f95abaf38d0cc1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7719741321<br>             <b>Средний EBIT:</b> 46 446 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Верейская, д 29 стр 134, помещ 2Н/2         </div>         </div>`)[0];
+                popup_f951c91bd7720f00ef7447a0f3ddc6f3.setContent(html_807fd30077a3e6bf40f95abaf38d0cc1);
+            
+        
+
+        circle_marker_aea57847482936d9797b82a2475ee484.bindPopup(popup_f951c91bd7720f00ef7447a0f3ddc6f3)
+        ;
+
+        
+    
+    
+            circle_marker_aea57847482936d9797b82a2475ee484.bindTooltip(
+                `<div>
+                     ИНН: 7719741321
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fcb83cb3fd73ec6160f567801eba38b = L.circleMarker(
+                [55.7340138, 37.6160955],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_1d67ae6da050234b998d5bed212ee6d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_daac2a62c93c45154f39c114954fbcee = $(`<div id="html_daac2a62c93c45154f39c114954fbcee" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 1414006922<br>             <b>Средний EBIT:</b> 39 804 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Малая Полянка, д 12А, кв 26         </div>         </div>`)[0];
+                popup_1d67ae6da050234b998d5bed212ee6d6.setContent(html_daac2a62c93c45154f39c114954fbcee);
+            
+        
+
+        circle_marker_9fcb83cb3fd73ec6160f567801eba38b.bindPopup(popup_1d67ae6da050234b998d5bed212ee6d6)
+        ;
+
+        
+    
+    
+            circle_marker_9fcb83cb3fd73ec6160f567801eba38b.bindTooltip(
+                `<div>
+                     ИНН: 1414006922
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59f72c2d02f238bfc5fdbf71837a7e1b = L.circleMarker(
+                [59.9422259, 30.3598083],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_2b7bc266253cae6b67478c42d9c4d680 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a65b309ee963ea38d472caec6a1e938 = $(`<div id="html_9a65b309ee963ea38d472caec6a1e938" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7830001839<br>             <b>Средний EBIT:</b> 37 770 тыс. руб.<br>             <b>Адрес:</b> 191123, Г.САНКТ-ПЕТЕРБУРГ, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ ЛИТЕЙНЫЙ ОКРУГ, УЛ. РЫЛЕЕВА, Д. 29, ЛИТЕРА А, ПОМЕЩ. 1-Н, ОФИС 101, Ч/П 1         </div>         </div>`)[0];
+                popup_2b7bc266253cae6b67478c42d9c4d680.setContent(html_9a65b309ee963ea38d472caec6a1e938);
+            
+        
+
+        circle_marker_59f72c2d02f238bfc5fdbf71837a7e1b.bindPopup(popup_2b7bc266253cae6b67478c42d9c4d680)
+        ;
+
+        
+    
+    
+            circle_marker_59f72c2d02f238bfc5fdbf71837a7e1b.bindTooltip(
+                `<div>
+                     ИНН: 7830001839
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bddc083998f7858b9923c976df032dc8 = L.circleMarker(
+                [51.6638224, 39.202917],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_4b60ad41f841305af8659675dbb7d359 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3bc74771e2d8cca4a83b8eef42bb40e0 = $(`<div id="html_3bc74771e2d8cca4a83b8eef42bb40e0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3663001942<br>             <b>Средний EBIT:</b> 34 485 тыс. руб.<br>             <b>Адрес:</b> г Воронеж, ул Пушкинская, д 1, офис 518         </div>         </div>`)[0];
+                popup_4b60ad41f841305af8659675dbb7d359.setContent(html_3bc74771e2d8cca4a83b8eef42bb40e0);
+            
+        
+
+        circle_marker_bddc083998f7858b9923c976df032dc8.bindPopup(popup_4b60ad41f841305af8659675dbb7d359)
+        ;
+
+        
+    
+    
+            circle_marker_bddc083998f7858b9923c976df032dc8.bindTooltip(
+                `<div>
+                     ИНН: 3663001942
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3995ccbc5d7319d0078a2cb4a3acf322 = L.circleMarker(
+                [45.044928, 38.978673],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_b8ef6d28ec19ced1908ccc777677efe0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddd36cf246e4545ffe13c96f8d8c6dd3 = $(`<div id="html_ddd36cf246e4545ffe13c96f8d8c6dd3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2310111297<br>             <b>Средний EBIT:</b> 26 811 тыс. руб.<br>             <b>Адрес:</b> г Краснодар, ул Красная, д 176 стр а, офис 10         </div>         </div>`)[0];
+                popup_b8ef6d28ec19ced1908ccc777677efe0.setContent(html_ddd36cf246e4545ffe13c96f8d8c6dd3);
+            
+        
+
+        circle_marker_3995ccbc5d7319d0078a2cb4a3acf322.bindPopup(popup_b8ef6d28ec19ced1908ccc777677efe0)
+        ;
+
+        
+    
+    
+            circle_marker_3995ccbc5d7319d0078a2cb4a3acf322.bindTooltip(
+                `<div>
+                     ИНН: 2310111297
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f2fdd314035f986a6a900525f7f3195 = L.circleMarker(
+                [56.030009, 37.497755],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_2163b48b61b74a8ce3a25598354deb98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd57dc3d3426c03672873d9cc6d29672 = $(`<div id="html_fd57dc3d3426c03672873d9cc6d29672" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5029014809<br>             <b>Средний EBIT:</b> 25 847 тыс. руб.<br>             <b>Адрес:</b> Московская обл, г Лобня, ул Оленьи Пруды, стр 31Б/1         </div>         </div>`)[0];
+                popup_2163b48b61b74a8ce3a25598354deb98.setContent(html_fd57dc3d3426c03672873d9cc6d29672);
+            
+        
+
+        circle_marker_6f2fdd314035f986a6a900525f7f3195.bindPopup(popup_2163b48b61b74a8ce3a25598354deb98)
+        ;
+
+        
+    
+    
+            circle_marker_6f2fdd314035f986a6a900525f7f3195.bindTooltip(
+                `<div>
+                     ИНН: 5029014809
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4034fc925d554e7a4f254aa5ca80bd55 = L.circleMarker(
+                [53.4120456, 58.9602552],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_fffb56870cdf9a0f1665fc025d13c4e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82a7a72eaedf1503c376c3c045e8f929 = $(`<div id="html_82a7a72eaedf1503c376c3c045e8f929" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7414000992<br>             <b>Средний EBIT:</b> 23 166 тыс. руб.<br>             <b>Адрес:</b> Челябинская обл, г Магнитогорск, ул Гагарина, д 50, офис 1         </div>         </div>`)[0];
+                popup_fffb56870cdf9a0f1665fc025d13c4e1.setContent(html_82a7a72eaedf1503c376c3c045e8f929);
+            
+        
+
+        circle_marker_4034fc925d554e7a4f254aa5ca80bd55.bindPopup(popup_fffb56870cdf9a0f1665fc025d13c4e1)
+        ;
+
+        
+    
+    
+            circle_marker_4034fc925d554e7a4f254aa5ca80bd55.bindTooltip(
+                `<div>
+                     ИНН: 7414000992
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca73476a7b058ff15826c601a98f9c29 = L.circleMarker(
+                [55.8731882, 37.5971037],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_5cc6a02f35a5473fa83947621f895455 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac219b348332d034bce6a209a3a3e299 = $(`<div id="html_ac219b348332d034bce6a209a3a3e299" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7728135831<br>             <b>Средний EBIT:</b> 22 677 тыс. руб.<br>             <b>Адрес:</b> г Москва, Высоковольтный проезд, д 9         </div>         </div>`)[0];
+                popup_5cc6a02f35a5473fa83947621f895455.setContent(html_ac219b348332d034bce6a209a3a3e299);
+            
+        
+
+        circle_marker_ca73476a7b058ff15826c601a98f9c29.bindPopup(popup_5cc6a02f35a5473fa83947621f895455)
+        ;
+
+        
+    
+    
+            circle_marker_ca73476a7b058ff15826c601a98f9c29.bindTooltip(
+                `<div>
+                     ИНН: 7728135831
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d13b886c29afce776a7adc20e3807f08 = L.circleMarker(
+                [55.8069833, 37.5458684],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_4515ec975f839fa1d646413ab0a887b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78d1e0653469b828ed1212e867b907aa = $(`<div id="html_78d1e0653469b828ed1212e867b907aa" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7715278180<br>             <b>Средний EBIT:</b> 21 513 тыс. руб.<br>             <b>Адрес:</b> г Москва, Кочновский проезд, д 4 к 2, помещ I         </div>         </div>`)[0];
+                popup_4515ec975f839fa1d646413ab0a887b4.setContent(html_78d1e0653469b828ed1212e867b907aa);
+            
+        
+
+        circle_marker_d13b886c29afce776a7adc20e3807f08.bindPopup(popup_4515ec975f839fa1d646413ab0a887b4)
+        ;
+
+        
+    
+    
+            circle_marker_d13b886c29afce776a7adc20e3807f08.bindTooltip(
+                `<div>
+                     ИНН: 7715278180
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e25c2e4f276cc8acb60b7e7658bf8109 = L.circleMarker(
+                [56.8063804, 60.6026379],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_19b5daeef9af621936f249d1a3d6452e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf11e04bc57d140259721e6d36b145f2 = $(`<div id="html_bf11e04bc57d140259721e6d36b145f2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 6670160730<br>             <b>Средний EBIT:</b> 20 958 тыс. руб.<br>             <b>Адрес:</b> г Екатеринбург, ул Сурикова, д 53, офис 102         </div>         </div>`)[0];
+                popup_19b5daeef9af621936f249d1a3d6452e.setContent(html_bf11e04bc57d140259721e6d36b145f2);
+            
+        
+
+        circle_marker_e25c2e4f276cc8acb60b7e7658bf8109.bindPopup(popup_19b5daeef9af621936f249d1a3d6452e)
+        ;
+
+        
+    
+    
+            circle_marker_e25c2e4f276cc8acb60b7e7658bf8109.bindTooltip(
+                `<div>
+                     ИНН: 6670160730
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fab3390917bbbf82b47ee535280eb653 = L.circleMarker(
+                [55.7639367, 37.6162576],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_cacfb2eebd28dc1cca84c88624b52ead = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b35b9db3d18d79b17d267ad16f93fca2 = $(`<div id="html_b35b9db3d18d79b17d267ad16f93fca2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7704040517<br>             <b>Средний EBIT:</b> 20 835 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Петровка, д 15/13 стр 5         </div>         </div>`)[0];
+                popup_cacfb2eebd28dc1cca84c88624b52ead.setContent(html_b35b9db3d18d79b17d267ad16f93fca2);
+            
+        
+
+        circle_marker_fab3390917bbbf82b47ee535280eb653.bindPopup(popup_cacfb2eebd28dc1cca84c88624b52ead)
+        ;
+
+        
+    
+    
+            circle_marker_fab3390917bbbf82b47ee535280eb653.bindTooltip(
+                `<div>
+                     ИНН: 7704040517
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01801e8cf84a5835dc8630afd1a086de = L.circleMarker(
+                [43.749423, 44.646922],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_360a2f8c06d9a738783611169b47e2a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e38714e7b8bc05c51cf2adbe20b325e = $(`<div id="html_1e38714e7b8bc05c51cf2adbe20b325e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 1510008048<br>             <b>Средний EBIT:</b> 19 608 тыс. руб.<br>             <b>Адрес:</b> Респ Северная Осетия - Алания, г Моздок, ул Кирова, зд 130         </div>         </div>`)[0];
+                popup_360a2f8c06d9a738783611169b47e2a1.setContent(html_1e38714e7b8bc05c51cf2adbe20b325e);
+            
+        
+
+        circle_marker_01801e8cf84a5835dc8630afd1a086de.bindPopup(popup_360a2f8c06d9a738783611169b47e2a1)
+        ;
+
+        
+    
+    
+            circle_marker_01801e8cf84a5835dc8630afd1a086de.bindTooltip(
+                `<div>
+                     ИНН: 1510008048
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b53b91a895d4c8df9dcebc67689fefa = L.circleMarker(
+                [55.8581499, 47.4621308],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_9b1946e44c07f746dea54aafd5f8751a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3d399eeae9ae9a2927a493d3a7093be = $(`<div id="html_e3d399eeae9ae9a2927a493d3a7093be" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2115000346<br>             <b>Средний EBIT:</b> 19 319 тыс. руб.<br>             <b>Адрес:</b> Чувашская Республика - Чувашия, г Цивильск, ул Павла Иванова, зд 8         </div>         </div>`)[0];
+                popup_9b1946e44c07f746dea54aafd5f8751a.setContent(html_e3d399eeae9ae9a2927a493d3a7093be);
+            
+        
+
+        circle_marker_7b53b91a895d4c8df9dcebc67689fefa.bindPopup(popup_9b1946e44c07f746dea54aafd5f8751a)
+        ;
+
+        
+    
+    
+            circle_marker_7b53b91a895d4c8df9dcebc67689fefa.bindTooltip(
+                `<div>
+                     ИНН: 2115000346
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f4383cab954849125dc389762d66481 = L.circleMarker(
+                [50.6155933, 36.5961799],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_908c21ac50716966b9588cdd4b487603 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d70f6476ba8b6bb0320ce61ea9e461a = $(`<div id="html_0d70f6476ba8b6bb0320ce61ea9e461a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3123040930<br>             <b>Средний EBIT:</b> 12 567 тыс. руб.<br>             <b>Адрес:</b> г Белгород, ул Чехова, д 2А, офис 109         </div>         </div>`)[0];
+                popup_908c21ac50716966b9588cdd4b487603.setContent(html_0d70f6476ba8b6bb0320ce61ea9e461a);
+            
+        
+
+        circle_marker_3f4383cab954849125dc389762d66481.bindPopup(popup_908c21ac50716966b9588cdd4b487603)
+        ;
+
+        
+    
+    
+            circle_marker_3f4383cab954849125dc389762d66481.bindTooltip(
+                `<div>
+                     ИНН: 3123040930
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_efb65f67c178cc143d8e1801a4f067bf = L.circleMarker(
+                [51.297974, 37.833231],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_72f023b2e9b966b5eeae28751719021c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4179074985cf7ce335ce56d5b93c7447 = $(`<div id="html_4179074985cf7ce335ce56d5b93c7447" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3128065293<br>             <b>Средний EBIT:</b> 11 044 тыс. руб.<br>             <b>Адрес:</b> 309500, БЕЛГОРОДСКАЯ ОБЛАСТЬ, Г. СТАРЫЙ ОСКОЛ, СТ. КОТЕЛ ПРОМУЗЕЛ, ПЛ-КА Транспортная проезд Ш-4 (станция Котел промузел тер), ПЛОЩАДКА ТРАНСПОРТНАЯ, ПРОЕЗД Ш-4 СТРОЕНИЕ 29         </div>         </div>`)[0];
+                popup_72f023b2e9b966b5eeae28751719021c.setContent(html_4179074985cf7ce335ce56d5b93c7447);
+            
+        
+
+        circle_marker_efb65f67c178cc143d8e1801a4f067bf.bindPopup(popup_72f023b2e9b966b5eeae28751719021c)
+        ;
+
+        
+    
+    
+            circle_marker_efb65f67c178cc143d8e1801a4f067bf.bindTooltip(
+                `<div>
+                     ИНН: 3128065293
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5b5f1ac96d8b9ca7cf62bd8f57568b4f = L.circleMarker(
+                [52.2595299, 104.3547473],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_eb7e1524af49e94b0cec33936b9ec09c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1dc7a664d6a005fdf765669d15432181 = $(`<div id="html_1dc7a664d6a005fdf765669d15432181" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3811167535<br>             <b>Средний EBIT:</b> 10 014 тыс. руб.<br>             <b>Адрес:</b> г Иркутск, ул Дыбовского, д 8/10         </div>         </div>`)[0];
+                popup_eb7e1524af49e94b0cec33936b9ec09c.setContent(html_1dc7a664d6a005fdf765669d15432181);
+            
+        
+
+        circle_marker_5b5f1ac96d8b9ca7cf62bd8f57568b4f.bindPopup(popup_eb7e1524af49e94b0cec33936b9ec09c)
+        ;
+
+        
+    
+    
+            circle_marker_5b5f1ac96d8b9ca7cf62bd8f57568b4f.bindTooltip(
+                `<div>
+                     ИНН: 3811167535
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_694d778f9548ba115e5dd0a69df0fcbd = L.circleMarker(
+                [59.9675747, 30.2881012],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_78c7f31b28c01c54fe058fb6a220be1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2781839fd44c91a631be8b31e8031615 = $(`<div id="html_2781839fd44c91a631be8b31e8031615" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7813427641<br>             <b>Средний EBIT:</b> 9 505 тыс. руб.<br>             <b>Адрес:</b> 197110, Г.САНКТ-ПЕТЕРБУРГ, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ ЧКАЛОВСКОЕ, УЛ. БАРОЧНАЯ, Д. 10, К. 1, ЛИТЕРА А, ПОМЕЩ. 16-Н:29(ЧАСТЬ), ОФИС 304         </div>         </div>`)[0];
+                popup_78c7f31b28c01c54fe058fb6a220be1c.setContent(html_2781839fd44c91a631be8b31e8031615);
+            
+        
+
+        circle_marker_694d778f9548ba115e5dd0a69df0fcbd.bindPopup(popup_78c7f31b28c01c54fe058fb6a220be1c)
+        ;
+
+        
+    
+    
+            circle_marker_694d778f9548ba115e5dd0a69df0fcbd.bindTooltip(
+                `<div>
+                     ИНН: 7813427641
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d79eda019f8de54a1427e601ec9574d = L.circleMarker(
+                [53.2381973, 50.2455211],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_eb3c9dfb015b7123fceb4fb1c26958c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76fc88b1b1a6fd6df47ac50b31bdb1f9 = $(`<div id="html_76fc88b1b1a6fd6df47ac50b31bdb1f9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 6312040240<br>             <b>Средний EBIT:</b> 8 509 тыс. руб.<br>             <b>Адрес:</b> г Самара, ул Мирная, д 162         </div>         </div>`)[0];
+                popup_eb3c9dfb015b7123fceb4fb1c26958c2.setContent(html_76fc88b1b1a6fd6df47ac50b31bdb1f9);
+            
+        
+
+        circle_marker_8d79eda019f8de54a1427e601ec9574d.bindPopup(popup_eb3c9dfb015b7123fceb4fb1c26958c2)
+        ;
+
+        
+    
+    
+            circle_marker_8d79eda019f8de54a1427e601ec9574d.bindTooltip(
+                `<div>
+                     ИНН: 6312040240
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd437a52f458e06c9296ad2cf761c108 = L.circleMarker(
+                [42.7268136, 133.081351],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_43f551801ec9689c87ffeec20cecdbe3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_df5a4cf9947de99d78e62d65032ec1af = $(`<div id="html_df5a4cf9947de99d78e62d65032ec1af" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2508045333<br>             <b>Средний EBIT:</b> 6 054 тыс. руб.<br>             <b>Адрес:</b> Приморский край, г Находка, мкр поселок Врангель, ул Крайнева, д 8         </div>         </div>`)[0];
+                popup_43f551801ec9689c87ffeec20cecdbe3.setContent(html_df5a4cf9947de99d78e62d65032ec1af);
+            
+        
+
+        circle_marker_cd437a52f458e06c9296ad2cf761c108.bindPopup(popup_43f551801ec9689c87ffeec20cecdbe3)
+        ;
+
+        
+    
+    
+            circle_marker_cd437a52f458e06c9296ad2cf761c108.bindTooltip(
+                `<div>
+                     ИНН: 2508045333
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59f5caf1f1b50b79a7d5328ede8ecf26 = L.circleMarker(
+                [51.6666589, 39.185956],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_39dfb075088618d195ba2037afd8cf7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6255d454faf01177fe9578363eb213ba = $(`<div id="html_6255d454faf01177fe9578363eb213ba" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3627008639<br>             <b>Средний EBIT:</b> 6 053 тыс. руб.<br>             <b>Адрес:</b> г Воронеж, ул Революции 1905 года, д 31Ю, помещ 1/26         </div>         </div>`)[0];
+                popup_39dfb075088618d195ba2037afd8cf7c.setContent(html_6255d454faf01177fe9578363eb213ba);
+            
+        
+
+        circle_marker_59f5caf1f1b50b79a7d5328ede8ecf26.bindPopup(popup_39dfb075088618d195ba2037afd8cf7c)
+        ;
+
+        
+    
+    
+            circle_marker_59f5caf1f1b50b79a7d5328ede8ecf26.bindTooltip(
+                `<div>
+                     ИНН: 3627008639
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98e7434205674e9ae388630e378158f4 = L.circleMarker(
+                [56.0782584, 92.9866441],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_a2910069ac4e03cda0c95e4a9e6a2f7d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1848cae0998c0abfece126a36e39a7a = $(`<div id="html_d1848cae0998c0abfece126a36e39a7a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2465006513<br>             <b>Средний EBIT:</b> 6 036 тыс. руб.<br>             <b>Адрес:</b> г Красноярск, ул Башиловская, д 5         </div>         </div>`)[0];
+                popup_a2910069ac4e03cda0c95e4a9e6a2f7d.setContent(html_d1848cae0998c0abfece126a36e39a7a);
+            
+        
+
+        circle_marker_98e7434205674e9ae388630e378158f4.bindPopup(popup_a2910069ac4e03cda0c95e4a9e6a2f7d)
+        ;
+
+        
+    
+    
+            circle_marker_98e7434205674e9ae388630e378158f4.bindTooltip(
+                `<div>
+                     ИНН: 2465006513
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d86b5126aa9a0ca1ccf938b58ace538c = L.circleMarker(
+                [58.008276, 56.231554],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_c8ddc43a4fcf1af543f187404183e29e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbe48826a81ca8c4418a52d783cdf001 = $(`<div id="html_bbe48826a81ca8c4418a52d783cdf001" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5902115094<br>             <b>Средний EBIT:</b> 5 912 тыс. руб.<br>             <b>Адрес:</b> г Пермь, ул Пермская, д 126А         </div>         </div>`)[0];
+                popup_c8ddc43a4fcf1af543f187404183e29e.setContent(html_bbe48826a81ca8c4418a52d783cdf001);
+            
+        
+
+        circle_marker_d86b5126aa9a0ca1ccf938b58ace538c.bindPopup(popup_c8ddc43a4fcf1af543f187404183e29e)
+        ;
+
+        
+    
+    
+            circle_marker_d86b5126aa9a0ca1ccf938b58ace538c.bindTooltip(
+                `<div>
+                     ИНН: 5902115094
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5082d9bb40207da252196f8e5be9d04 = L.circleMarker(
+                [55.9142669, 37.770317],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_ed7e7b2998aaf1a3333f60f25b61f696 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b0f54583d6af492c6a2950b080523dd = $(`<div id="html_3b0f54583d6af492c6a2950b080523dd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7709502155<br>             <b>Средний EBIT:</b> 5 391 тыс. руб.<br>             <b>Адрес:</b> 141009, МОСКОВСКАЯ ОБЛАСТЬ, Г. МЫТИЩИ, УЛ. КАРЛА МАРКСА, Д. 4, ЭТ/ПОМ/ЛИТ 5/518,544/А         </div>         </div>`)[0];
+                popup_ed7e7b2998aaf1a3333f60f25b61f696.setContent(html_3b0f54583d6af492c6a2950b080523dd);
+            
+        
+
+        circle_marker_c5082d9bb40207da252196f8e5be9d04.bindPopup(popup_ed7e7b2998aaf1a3333f60f25b61f696)
+        ;
+
+        
+    
+    
+            circle_marker_c5082d9bb40207da252196f8e5be9d04.bindTooltip(
+                `<div>
+                     ИНН: 7709502155
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23af8fca0c80c0fb49a4614d7c55c62d = L.circleMarker(
+                [54.9332853, 20.1629723],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_d881a9e53922dce6b3b750ad892fed80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae700e3425724f6703edb4dc4567813a = $(`<div id="html_ae700e3425724f6703edb4dc4567813a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3903008430<br>             <b>Средний EBIT:</b> 4 939 тыс. руб.<br>             <b>Адрес:</b> Калининградская обл, г Светлогорск, ул Железнодорожная, д 1А         </div>         </div>`)[0];
+                popup_d881a9e53922dce6b3b750ad892fed80.setContent(html_ae700e3425724f6703edb4dc4567813a);
+            
+        
+
+        circle_marker_23af8fca0c80c0fb49a4614d7c55c62d.bindPopup(popup_d881a9e53922dce6b3b750ad892fed80)
+        ;
+
+        
+    
+    
+            circle_marker_23af8fca0c80c0fb49a4614d7c55c62d.bindTooltip(
+                `<div>
+                     ИНН: 3903008430
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b374978f7890a36a79942a2f2265301a = L.circleMarker(
+                [55.6595105, 37.526997],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_53072565db2dd0f42879960586e79302 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0fe7249396fe7211f12d9292901ab01e = $(`<div id="html_0fe7249396fe7211f12d9292901ab01e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 9701004970<br>             <b>Средний EBIT:</b> 4 813 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Академика Челомея, д 3 к 2         </div>         </div>`)[0];
+                popup_53072565db2dd0f42879960586e79302.setContent(html_0fe7249396fe7211f12d9292901ab01e);
+            
+        
+
+        circle_marker_b374978f7890a36a79942a2f2265301a.bindPopup(popup_53072565db2dd0f42879960586e79302)
+        ;
+
+        
+    
+    
+            circle_marker_b374978f7890a36a79942a2f2265301a.bindTooltip(
+                `<div>
+                     ИНН: 9701004970
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a9367257b4cc03befabeecc7037835e = L.circleMarker(
+                [57.97638, 56.183806],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_c2732ad7d719d719ffd77c565dc884c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ed77d416dc6c58dffe6873c6ac5d712 = $(`<div id="html_5ed77d416dc6c58dffe6873c6ac5d712" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5902126804<br>             <b>Средний EBIT:</b> 4 547 тыс. руб.<br>             <b>Адрес:</b> г Пермь, ул Мира, д 45А, офис 411         </div>         </div>`)[0];
+                popup_c2732ad7d719d719ffd77c565dc884c3.setContent(html_5ed77d416dc6c58dffe6873c6ac5d712);
+            
+        
+
+        circle_marker_2a9367257b4cc03befabeecc7037835e.bindPopup(popup_c2732ad7d719d719ffd77c565dc884c3)
+        ;
+
+        
+    
+    
+            circle_marker_2a9367257b4cc03befabeecc7037835e.bindTooltip(
+                `<div>
+                     ИНН: 5902126804
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe131a57ecac888c70f2c2074417696e = L.circleMarker(
+                [55.324102, 38.703329],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_c37b07b84f1337ad41c5dc9be4860999 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88542428639b5b1a6e718c187cbfbfe0 = $(`<div id="html_88542428639b5b1a6e718c187cbfbfe0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5005001110<br>             <b>Средний EBIT:</b> 4 182 тыс. руб.<br>             <b>Адрес:</b> Московская обл, г Воскресенск, ул Быковского, зд 2, помещ 1         </div>         </div>`)[0];
+                popup_c37b07b84f1337ad41c5dc9be4860999.setContent(html_88542428639b5b1a6e718c187cbfbfe0);
+            
+        
+
+        circle_marker_fe131a57ecac888c70f2c2074417696e.bindPopup(popup_c37b07b84f1337ad41c5dc9be4860999)
+        ;
+
+        
+    
+    
+            circle_marker_fe131a57ecac888c70f2c2074417696e.bindTooltip(
+                `<div>
+                     ИНН: 5005001110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_077b6a86db44e953cd7f6a27f47ca485 = L.circleMarker(
+                [55.6698248, 37.6325994],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_d054fe1f86a30048fe2c00833a447c69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03a4c4686eca6cf6a2ca7b3812683150 = $(`<div id="html_03a4c4686eca6cf6a2ca7b3812683150" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7705585440<br>             <b>Средний EBIT:</b> 3 951 тыс. руб.<br>             <b>Адрес:</b> 115230, Г.МОСКВА, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ НАГАТИНО-САДОВНИКИ, ПРОЕЗД ХЛЕБОЗАВОДСКИЙ, Д. 7, СТР. 9, ЭТАЖ/ПОМЕЩ./КОМ./ОФИС 3/Х/36/2         </div>         </div>`)[0];
+                popup_d054fe1f86a30048fe2c00833a447c69.setContent(html_03a4c4686eca6cf6a2ca7b3812683150);
+            
+        
+
+        circle_marker_077b6a86db44e953cd7f6a27f47ca485.bindPopup(popup_d054fe1f86a30048fe2c00833a447c69)
+        ;
+
+        
+    
+    
+            circle_marker_077b6a86db44e953cd7f6a27f47ca485.bindTooltip(
+                `<div>
+                     ИНН: 7705585440
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba405b8d4e2d974ecc6f2b81bf9be3e0 = L.circleMarker(
+                [57.5951763, 39.8660022],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_bc2bb28830d25c4e0ed3a40c5ee3edef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_980e46295ff18947600f672f3ec7fac5 = $(`<div id="html_980e46295ff18947600f672f3ec7fac5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7733799210<br>             <b>Средний EBIT:</b> 3 601 тыс. руб.<br>             <b>Адрес:</b> г Ярославль, Московский пр-кт, д 74, офис 409         </div>         </div>`)[0];
+                popup_bc2bb28830d25c4e0ed3a40c5ee3edef.setContent(html_980e46295ff18947600f672f3ec7fac5);
+            
+        
+
+        circle_marker_ba405b8d4e2d974ecc6f2b81bf9be3e0.bindPopup(popup_bc2bb28830d25c4e0ed3a40c5ee3edef)
+        ;
+
+        
+    
+    
+            circle_marker_ba405b8d4e2d974ecc6f2b81bf9be3e0.bindTooltip(
+                `<div>
+                     ИНН: 7733799210
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0da56a48d2a92c9487c8a1dea6cf3b93 = L.circleMarker(
+                [55.9336996, 37.7530736],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_8c2dba3ea0acb3b76578281f8f1ec45b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_327b9ee61326acb4480532e41ec65c80 = $(`<div id="html_327b9ee61326acb4480532e41ec65c80" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5029022704<br>             <b>Средний EBIT:</b> 3 422 тыс. руб.<br>             <b>Адрес:</b> Московская обл, г Мытищи, Олимпийский пр-кт, д 48 литера б, офис 31         </div>         </div>`)[0];
+                popup_8c2dba3ea0acb3b76578281f8f1ec45b.setContent(html_327b9ee61326acb4480532e41ec65c80);
+            
+        
+
+        circle_marker_0da56a48d2a92c9487c8a1dea6cf3b93.bindPopup(popup_8c2dba3ea0acb3b76578281f8f1ec45b)
+        ;
+
+        
+    
+    
+            circle_marker_0da56a48d2a92c9487c8a1dea6cf3b93.bindTooltip(
+                `<div>
+                     ИНН: 5029022704
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d96e74b141f272b134dec5108b6d859 = L.circleMarker(
+                [55.0644973, 82.935697],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_8df0fa5bed9157e931f135b22f0dc35a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a6f73af4915c8143e53d9766d181691 = $(`<div id="html_6a6f73af4915c8143e53d9766d181691" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 541000015<br>             <b>Средний EBIT:</b> 3 402 тыс. руб.<br>             <b>Адрес:</b> г Новосибирск, ул Танковая, д 72         </div>         </div>`)[0];
+                popup_8df0fa5bed9157e931f135b22f0dc35a.setContent(html_6a6f73af4915c8143e53d9766d181691);
+            
+        
+
+        circle_marker_1d96e74b141f272b134dec5108b6d859.bindPopup(popup_8df0fa5bed9157e931f135b22f0dc35a)
+        ;
+
+        
+    
+    
+            circle_marker_1d96e74b141f272b134dec5108b6d859.bindTooltip(
+                `<div>
+                     ИНН: 541000015
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f7b749822feaeb8d63172c5a5549665 = L.circleMarker(
+                [59.933852, 30.372462],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_0c3986ed1ac750d8901b9647eedc05ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf2eb05cec8af0d64e111cb589f45fe5 = $(`<div id="html_bf2eb05cec8af0d64e111cb589f45fe5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7814027004<br>             <b>Средний EBIT:</b> 3 245 тыс. руб.<br>             <b>Адрес:</b> 191036, Г.САНКТ-ПЕТЕРБУРГ, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ СМОЛЬНИНСКОЕ, УЛ. 5-Я СОВЕТСКАЯ, Д. 28, ЛИТЕРА А, ПОМЕЩ. 1-Н, РАБ.М. 5         </div>         </div>`)[0];
+                popup_0c3986ed1ac750d8901b9647eedc05ab.setContent(html_bf2eb05cec8af0d64e111cb589f45fe5);
+            
+        
+
+        circle_marker_1f7b749822feaeb8d63172c5a5549665.bindPopup(popup_0c3986ed1ac750d8901b9647eedc05ab)
+        ;
+
+        
+    
+    
+            circle_marker_1f7b749822feaeb8d63172c5a5549665.bindTooltip(
+                `<div>
+                     ИНН: 7814027004
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b71885cec8c58a424cf8b5e2ae39917 = L.circleMarker(
+                [55.681752, 37.617959],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_5cba6549caf36c9a3860d0120c3a118d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79c7d7a66a905d5d16132e791d465026 = $(`<div id="html_79c7d7a66a905d5d16132e791d465026" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7726065829<br>             <b>Средний EBIT:</b> 3 122 тыс. руб.<br>             <b>Адрес:</b> г Москва, Варшавское шоссе, д 28Ж, офис 4         </div>         </div>`)[0];
+                popup_5cba6549caf36c9a3860d0120c3a118d.setContent(html_79c7d7a66a905d5d16132e791d465026);
+            
+        
+
+        circle_marker_0b71885cec8c58a424cf8b5e2ae39917.bindPopup(popup_5cba6549caf36c9a3860d0120c3a118d)
+        ;
+
+        
+    
+    
+            circle_marker_0b71885cec8c58a424cf8b5e2ae39917.bindTooltip(
+                `<div>
+                     ИНН: 7726065829
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c63fff43a72b7d2718382e83706cca53 = L.circleMarker(
+                [43.175026, 131.93932],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_a5cc430a45275562f94fe27c18ec73f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8acad484dc85b3da721987f48841954 = $(`<div id="html_c8acad484dc85b3da721987f48841954" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2539030721<br>             <b>Средний EBIT:</b> 2 567 тыс. руб.<br>             <b>Адрес:</b> г Владивосток, ул Русская, д 93         </div>         </div>`)[0];
+                popup_a5cc430a45275562f94fe27c18ec73f5.setContent(html_c8acad484dc85b3da721987f48841954);
+            
+        
+
+        circle_marker_c63fff43a72b7d2718382e83706cca53.bindPopup(popup_a5cc430a45275562f94fe27c18ec73f5)
+        ;
+
+        
+    
+    
+            circle_marker_c63fff43a72b7d2718382e83706cca53.bindTooltip(
+                `<div>
+                     ИНН: 2539030721
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9df165511419c9f1d5d482b4aeef378 = L.circleMarker(
+                [55.7933435, 37.561422],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_8ed13d9077831c178d724f82a9d9ae99 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_447e9cea84b32c469a0d329fd23619d9 = $(`<div id="html_447e9cea84b32c469a0d329fd23619d9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5000000218<br>             <b>Средний EBIT:</b> 2 083 тыс. руб.<br>             <b>Адрес:</b> г Москва, Петровско-Разумовская аллея, д 10 к 2, помещ 1/1         </div>         </div>`)[0];
+                popup_8ed13d9077831c178d724f82a9d9ae99.setContent(html_447e9cea84b32c469a0d329fd23619d9);
+            
+        
+
+        circle_marker_f9df165511419c9f1d5d482b4aeef378.bindPopup(popup_8ed13d9077831c178d724f82a9d9ae99)
+        ;
+
+        
+    
+    
+            circle_marker_f9df165511419c9f1d5d482b4aeef378.bindTooltip(
+                `<div>
+                     ИНН: 5000000218
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ca646caed6d1471e9bde59c404de9f8 = L.circleMarker(
+                [44.951409, 34.119724],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_700e531369835226519e5486fd5049fe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f81b8b964f02ce5fed8ccb50c9846a9 = $(`<div id="html_5f81b8b964f02ce5fed8ccb50c9846a9" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 9102046280<br>             <b>Средний EBIT:</b> 1 850 тыс. руб.<br>             <b>Адрес:</b> Респ Крым, г Симферополь, ул Фрунзе, д 41         </div>         </div>`)[0];
+                popup_700e531369835226519e5486fd5049fe.setContent(html_5f81b8b964f02ce5fed8ccb50c9846a9);
+            
+        
+
+        circle_marker_7ca646caed6d1471e9bde59c404de9f8.bindPopup(popup_700e531369835226519e5486fd5049fe)
+        ;
+
+        
+    
+    
+            circle_marker_7ca646caed6d1471e9bde59c404de9f8.bindTooltip(
+                `<div>
+                     ИНН: 9102046280
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5903fa643923fc847ce1e869ce088d1d = L.circleMarker(
+                [51.5492497, 46.0313748],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_800cb65a6d6efcb9d91d99657664c4bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9001a342d6fb89fe875f12dc35f38e66 = $(`<div id="html_9001a342d6fb89fe875f12dc35f38e66" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 6450042805<br>             <b>Средний EBIT:</b> 1 813 тыс. руб.<br>             <b>Адрес:</b> г Саратов, ул Зеленая, зд 107, офис 26         </div>         </div>`)[0];
+                popup_800cb65a6d6efcb9d91d99657664c4bd.setContent(html_9001a342d6fb89fe875f12dc35f38e66);
+            
+        
+
+        circle_marker_5903fa643923fc847ce1e869ce088d1d.bindPopup(popup_800cb65a6d6efcb9d91d99657664c4bd)
+        ;
+
+        
+    
+    
+            circle_marker_5903fa643923fc847ce1e869ce088d1d.bindTooltip(
+                `<div>
+                     ИНН: 6450042805
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0454ae67f79298791a3ba6184e886f96 = L.circleMarker(
+                [59.892791, 30.4570203],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_b77bbfbc38e4d6725b0f2e22dead30ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3aeaa4024c9347e03ece9bedc4e99468 = $(`<div id="html_3aeaa4024c9347e03ece9bedc4e99468" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7803058547<br>             <b>Средний EBIT:</b> 1 641 тыс. руб.<br>             <b>Адрес:</b> г Санкт-Петербург, ул Крыленко, д 3А литера а         </div>         </div>`)[0];
+                popup_b77bbfbc38e4d6725b0f2e22dead30ef.setContent(html_3aeaa4024c9347e03ece9bedc4e99468);
+            
+        
+
+        circle_marker_0454ae67f79298791a3ba6184e886f96.bindPopup(popup_b77bbfbc38e4d6725b0f2e22dead30ef)
+        ;
+
+        
+    
+    
+            circle_marker_0454ae67f79298791a3ba6184e886f96.bindTooltip(
+                `<div>
+                     ИНН: 7803058547
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc443a84aa3a6e195573a173f78a1f30 = L.circleMarker(
+                [44.400892, 131.386524],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_b4836fc863cb75b74e05333095d0e0fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06b960f1c36968c0a506a066a1f61bf3 = $(`<div id="html_06b960f1c36968c0a506a066a1f61bf3" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2525003164<br>             <b>Средний EBIT:</b> 1 582 тыс. руб.<br>             <b>Адрес:</b> Приморский край, пгт Пограничный, ул Дубовика, зд 8         </div>         </div>`)[0];
+                popup_b4836fc863cb75b74e05333095d0e0fc.setContent(html_06b960f1c36968c0a506a066a1f61bf3);
+            
+        
+
+        circle_marker_fc443a84aa3a6e195573a173f78a1f30.bindPopup(popup_b4836fc863cb75b74e05333095d0e0fc)
+        ;
+
+        
+    
+    
+            circle_marker_fc443a84aa3a6e195573a173f78a1f30.bindTooltip(
+                `<div>
+                     ИНН: 2525003164
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_009e32c70468761779ca2c2962d1a37b = L.circleMarker(
+                [55.793531, 37.8047002],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_34a45f0172ce7441189f00606db37489 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0332a7a9fe21c4bfd7042fd8e1c4b42 = $(`<div id="html_e0332a7a9fe21c4bfd7042fd8e1c4b42" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7719243661<br>             <b>Средний EBIT:</b> 1 489 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Первомайская, д 89, помещ I, ком 12         </div>         </div>`)[0];
+                popup_34a45f0172ce7441189f00606db37489.setContent(html_e0332a7a9fe21c4bfd7042fd8e1c4b42);
+            
+        
+
+        circle_marker_009e32c70468761779ca2c2962d1a37b.bindPopup(popup_34a45f0172ce7441189f00606db37489)
+        ;
+
+        
+    
+    
+            circle_marker_009e32c70468761779ca2c2962d1a37b.bindTooltip(
+                `<div>
+                     ИНН: 7719243661
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a1b21950ccea08cc9b1bf437cb333377 = L.circleMarker(
+                [53.7376251, 34.7333825],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_d4b66e96a06d967d2510a2f28527c2c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbae019676fc7dd6c45667935bcdab03 = $(`<div id="html_bbae019676fc7dd6c45667935bcdab03" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 4006002065<br>             <b>Средний EBIT:</b> 1 438 тыс. руб.<br>             <b>Адрес:</b> Калужская обл, г Жиздра, ул Фокина         </div>         </div>`)[0];
+                popup_d4b66e96a06d967d2510a2f28527c2c8.setContent(html_bbae019676fc7dd6c45667935bcdab03);
+            
+        
+
+        circle_marker_a1b21950ccea08cc9b1bf437cb333377.bindPopup(popup_d4b66e96a06d967d2510a2f28527c2c8)
+        ;
+
+        
+    
+    
+            circle_marker_a1b21950ccea08cc9b1bf437cb333377.bindTooltip(
+                `<div>
+                     ИНН: 4006002065
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f83000af7a9452b89d4207fbb4c49e46 = L.circleMarker(
+                [54.580795, 39.758985],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_356edd1f6b16514e4e5e2971f3127fb7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac227e1ebcb4b371da280f0019cfaabc = $(`<div id="html_ac227e1ebcb4b371da280f0019cfaabc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 6228038066<br>             <b>Средний EBIT:</b> 1 337 тыс. руб.<br>             <b>Адрес:</b> г Рязань, км 197 (Окружная дорога), д 6         </div>         </div>`)[0];
+                popup_356edd1f6b16514e4e5e2971f3127fb7.setContent(html_ac227e1ebcb4b371da280f0019cfaabc);
+            
+        
+
+        circle_marker_f83000af7a9452b89d4207fbb4c49e46.bindPopup(popup_356edd1f6b16514e4e5e2971f3127fb7)
+        ;
+
+        
+    
+    
+            circle_marker_f83000af7a9452b89d4207fbb4c49e46.bindTooltip(
+                `<div>
+                     ИНН: 6228038066
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c156d0c9b8bd79aea0663bf869a30e26 = L.circleMarker(
+                [56.0087671, 37.8518214],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_6abe2391ee56e4ee9a2af56483ffb4e1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a60151a58b16f429b9f95b4c4fc89b4 = $(`<div id="html_7a60151a58b16f429b9f95b4c4fc89b4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5038038838<br>             <b>Средний EBIT:</b> 1 011 тыс. руб.<br>             <b>Адрес:</b> Московская обл, г Пушкино, ул Чехова, д 12, помещ 901         </div>         </div>`)[0];
+                popup_6abe2391ee56e4ee9a2af56483ffb4e1.setContent(html_7a60151a58b16f429b9f95b4c4fc89b4);
+            
+        
+
+        circle_marker_c156d0c9b8bd79aea0663bf869a30e26.bindPopup(popup_6abe2391ee56e4ee9a2af56483ffb4e1)
+        ;
+
+        
+    
+    
+            circle_marker_c156d0c9b8bd79aea0663bf869a30e26.bindTooltip(
+                `<div>
+                     ИНН: 5038038838
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e34c7f1c061cb7a0bd86a67c82bdd6ad = L.circleMarker(
+                [45.0501069, 136.6082347],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_9d802fd49832f5a8d36b03817e3c4bbe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_069b5108ba4d0b2d6197a1bba6d38d82 = $(`<div id="html_069b5108ba4d0b2d6197a1bba6d38d82" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2528000926<br>             <b>Средний EBIT:</b> 724 тыс. руб.<br>             <b>Адрес:</b> Приморский край, пгт Терней, ул Ивановская, д 100         </div>         </div>`)[0];
+                popup_9d802fd49832f5a8d36b03817e3c4bbe.setContent(html_069b5108ba4d0b2d6197a1bba6d38d82);
+            
+        
+
+        circle_marker_e34c7f1c061cb7a0bd86a67c82bdd6ad.bindPopup(popup_9d802fd49832f5a8d36b03817e3c4bbe)
+        ;
+
+        
+    
+    
+            circle_marker_e34c7f1c061cb7a0bd86a67c82bdd6ad.bindTooltip(
+                `<div>
+                     ИНН: 2528000926
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_febe52075c1dd76ac6b0a7f0c3ea99c1 = L.circleMarker(
+                [55.8175662, 37.6497874],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_53265f75bccca3ec15c1ea5f06ff0512 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97e9983abd15bc6122b5cf1d380cdf75 = $(`<div id="html_97e9983abd15bc6122b5cf1d380cdf75" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7719258347<br>             <b>Средний EBIT:</b> 652 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Ярославская, д 8 к 3, помещ I, ком 31         </div>         </div>`)[0];
+                popup_53265f75bccca3ec15c1ea5f06ff0512.setContent(html_97e9983abd15bc6122b5cf1d380cdf75);
+            
+        
+
+        circle_marker_febe52075c1dd76ac6b0a7f0c3ea99c1.bindPopup(popup_53265f75bccca3ec15c1ea5f06ff0512)
+        ;
+
+        
+    
+    
+            circle_marker_febe52075c1dd76ac6b0a7f0c3ea99c1.bindTooltip(
+                `<div>
+                     ИНН: 7719258347
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ef882c6c7062de1b0b816f9a0091cfb = L.circleMarker(
+                [57.0997867, 65.5693691],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_93d0edb03db3cb9c1fc09b3fb6b722b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcd42d5fee03f332ab89f7c6279413cc = $(`<div id="html_bcd42d5fee03f332ab89f7c6279413cc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7202255830<br>             <b>Средний EBIT:</b> 563 тыс. руб.<br>             <b>Адрес:</b> г Тюмень, ул Федюнинского, д 62, помещ 7         </div>         </div>`)[0];
+                popup_93d0edb03db3cb9c1fc09b3fb6b722b2.setContent(html_bcd42d5fee03f332ab89f7c6279413cc);
+            
+        
+
+        circle_marker_7ef882c6c7062de1b0b816f9a0091cfb.bindPopup(popup_93d0edb03db3cb9c1fc09b3fb6b722b2)
+        ;
+
+        
+    
+    
+            circle_marker_7ef882c6c7062de1b0b816f9a0091cfb.bindTooltip(
+                `<div>
+                     ИНН: 7202255830
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87c138c62c3961dff5a1ba14c48f716b = L.circleMarker(
+                [56.3176074, 43.8676518],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_80ccbaf648f9cac36bd5295a769e8f0c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_616d4fdab71f5fb0dcbbf3d568f1d658 = $(`<div id="html_616d4fdab71f5fb0dcbbf3d568f1d658" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5263001814<br>             <b>Средний EBIT:</b> 537 тыс. руб.<br>             <b>Адрес:</b> Нижегородская обл, г Нижний Новгород, ул Героя Рябцева, д 1В к 21         </div>         </div>`)[0];
+                popup_80ccbaf648f9cac36bd5295a769e8f0c.setContent(html_616d4fdab71f5fb0dcbbf3d568f1d658);
+            
+        
+
+        circle_marker_87c138c62c3961dff5a1ba14c48f716b.bindPopup(popup_80ccbaf648f9cac36bd5295a769e8f0c)
+        ;
+
+        
+    
+    
+            circle_marker_87c138c62c3961dff5a1ba14c48f716b.bindTooltip(
+                `<div>
+                     ИНН: 5263001814
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2dd91ed55663245cc97428ff4040cac2 = L.circleMarker(
+                [55.5607915, 38.2468622],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_ba278c71966fb1f810bd56cff82f01f9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d55e0fa9ee92f83d1bbc57e2631c731 = $(`<div id="html_1d55e0fa9ee92f83d1bbc57e2631c731" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 504007693<br>             <b>Средний EBIT:</b> 458 тыс. руб.<br>             <b>Адрес:</b> Московская обл, г Раменское, ул Михалевича, д 70А         </div>         </div>`)[0];
+                popup_ba278c71966fb1f810bd56cff82f01f9.setContent(html_1d55e0fa9ee92f83d1bbc57e2631c731);
+            
+        
+
+        circle_marker_2dd91ed55663245cc97428ff4040cac2.bindPopup(popup_ba278c71966fb1f810bd56cff82f01f9)
+        ;
+
+        
+    
+    
+            circle_marker_2dd91ed55663245cc97428ff4040cac2.bindTooltip(
+                `<div>
+                     ИНН: 504007693
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e57f115113ec4c09e106dfd9c5bcb96 = L.circleMarker(
+                [59.876436, 30.3643583],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_7f5c082bf703dfacf1d3a51bee17c7ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f34fc59416475460e820fbff9f3b86b7 = $(`<div id="html_f34fc59416475460e820fbff9f3b86b7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7816061297<br>             <b>Средний EBIT:</b> 392 тыс. руб.<br>             <b>Адрес:</b> 192102, Г.САНКТ-ПЕТЕРБУРГ, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ ВОЛКОВСКОЕ, УЛ. ФУЧИКА, Д. 4, ЛИТЕРА К, ПОМЕЩ. 32 18Н, ОФИС 713         </div>         </div>`)[0];
+                popup_7f5c082bf703dfacf1d3a51bee17c7ef.setContent(html_f34fc59416475460e820fbff9f3b86b7);
+            
+        
+
+        circle_marker_9e57f115113ec4c09e106dfd9c5bcb96.bindPopup(popup_7f5c082bf703dfacf1d3a51bee17c7ef)
+        ;
+
+        
+    
+    
+            circle_marker_9e57f115113ec4c09e106dfd9c5bcb96.bindTooltip(
+                `<div>
+                     ИНН: 7816061297
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71c71362d3225def0b3b21056dc4addc = L.circleMarker(
+                [55.7866891, 49.1427506],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_5c615e2fe3cb1d5d519d10305045b47a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e01a951b333f36d1d948cfb5a21cd95d = $(`<div id="html_e01a951b333f36d1d948cfb5a21cd95d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 1655409759<br>             <b>Средний EBIT:</b> 346 тыс. руб.<br>             <b>Адрес:</b> г Казань, ул Лесгафта, д 6/57, помещ 14Д         </div>         </div>`)[0];
+                popup_5c615e2fe3cb1d5d519d10305045b47a.setContent(html_e01a951b333f36d1d948cfb5a21cd95d);
+            
+        
+
+        circle_marker_71c71362d3225def0b3b21056dc4addc.bindPopup(popup_5c615e2fe3cb1d5d519d10305045b47a)
+        ;
+
+        
+    
+    
+            circle_marker_71c71362d3225def0b3b21056dc4addc.bindTooltip(
+                `<div>
+                     ИНН: 1655409759
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75a00a7386d987167ae7b838eabfb8b0 = L.circleMarker(
+                [54.7295403, 20.4762747],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_1cee93a700529eca80fc5abfda6925e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61b46994a666afca1226a6f8a417e62c = $(`<div id="html_61b46994a666afca1226a6f8a417e62c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3906034170<br>             <b>Средний EBIT:</b> 328 тыс. руб.<br>             <b>Адрес:</b> г Калининград, ул Лейтенанта Яналова, д 42, офис 20         </div>         </div>`)[0];
+                popup_1cee93a700529eca80fc5abfda6925e4.setContent(html_61b46994a666afca1226a6f8a417e62c);
+            
+        
+
+        circle_marker_75a00a7386d987167ae7b838eabfb8b0.bindPopup(popup_1cee93a700529eca80fc5abfda6925e4)
+        ;
+
+        
+    
+    
+            circle_marker_75a00a7386d987167ae7b838eabfb8b0.bindTooltip(
+                `<div>
+                     ИНН: 3906034170
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85eb701536e4872be763355db3c8d7b8 = L.circleMarker(
+                [57.3476037, 28.3527083],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_46500d89080bd71bd03dc996ff2b4e09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e3141502bbaae6e49c28c05fd39fb5c = $(`<div id="html_2e3141502bbaae6e49c28c05fd39fb5c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 6013000288<br>             <b>Средний EBIT:</b> 327 тыс. руб.<br>             <b>Адрес:</b> Псковская обл, г Остров, ул К.Маркса, д 9         </div>         </div>`)[0];
+                popup_46500d89080bd71bd03dc996ff2b4e09.setContent(html_2e3141502bbaae6e49c28c05fd39fb5c);
+            
+        
+
+        circle_marker_85eb701536e4872be763355db3c8d7b8.bindPopup(popup_46500d89080bd71bd03dc996ff2b4e09)
+        ;
+
+        
+    
+    
+            circle_marker_85eb701536e4872be763355db3c8d7b8.bindTooltip(
+                `<div>
+                     ИНН: 6013000288
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a1284ae38bf53c8651bd0050a7d83f4 = L.circleMarker(
+                [55.6501284, 37.5405066],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_28e4d828059b5f07a72fe6189224b43c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_284541e1d49ab8b0bae93faba65c3ba0 = $(`<div id="html_284541e1d49ab8b0bae93faba65c3ba0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7729655368<br>             <b>Средний EBIT:</b> 246 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Бутлерова, д 17, ком 228         </div>         </div>`)[0];
+                popup_28e4d828059b5f07a72fe6189224b43c.setContent(html_284541e1d49ab8b0bae93faba65c3ba0);
+            
+        
+
+        circle_marker_3a1284ae38bf53c8651bd0050a7d83f4.bindPopup(popup_28e4d828059b5f07a72fe6189224b43c)
+        ;
+
+        
+    
+    
+            circle_marker_3a1284ae38bf53c8651bd0050a7d83f4.bindTooltip(
+                `<div>
+                     ИНН: 7729655368
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6edfb06ebfb76824c7eae9b4cee58b8b = L.circleMarker(
+                [55.3045111, 53.189936],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_ca5b7b667c43aac3247bdd7abbd917b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_813351cba8d408e79afdf3ca2a818b1e = $(`<div id="html_813351cba8d408e79afdf3ca2a818b1e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 1629003431<br>             <b>Средний EBIT:</b> 108 тыс. руб.<br>             <b>Адрес:</b> Респ Татарстан, село Муслюмово, ул Ф.Рашитова, д 40         </div>         </div>`)[0];
+                popup_ca5b7b667c43aac3247bdd7abbd917b3.setContent(html_813351cba8d408e79afdf3ca2a818b1e);
+            
+        
+
+        circle_marker_6edfb06ebfb76824c7eae9b4cee58b8b.bindPopup(popup_ca5b7b667c43aac3247bdd7abbd917b3)
+        ;
+
+        
+    
+    
+            circle_marker_6edfb06ebfb76824c7eae9b4cee58b8b.bindTooltip(
+                `<div>
+                     ИНН: 1629003431
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_635c1b1d1f663d559eca13c364bf64e6 = L.circleMarker(
+                [53.212359, 50.12778],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_85263a5f80df0d2fa16a21941919d6f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35369450cabc756d1b2b993e30a4c657 = $(`<div id="html_35369450cabc756d1b2b993e30a4c657" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 6316135260<br>             <b>Средний EBIT:</b> 89 тыс. руб.<br>             <b>Адрес:</b> г Самара, ул Осипенко, д 1А         </div>         </div>`)[0];
+                popup_85263a5f80df0d2fa16a21941919d6f4.setContent(html_35369450cabc756d1b2b993e30a4c657);
+            
+        
+
+        circle_marker_635c1b1d1f663d559eca13c364bf64e6.bindPopup(popup_85263a5f80df0d2fa16a21941919d6f4)
+        ;
+
+        
+    
+    
+            circle_marker_635c1b1d1f663d559eca13c364bf64e6.bindTooltip(
+                `<div>
+                     ИНН: 6316135260
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba3ea7426d89b23729a74341bbfb2f90 = L.circleMarker(
+                [55.8604425, 37.495402],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_8a43f358628cee57679bba6ef9984fc3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1fd183b188d88a49b8359d89c2aec699 = $(`<div id="html_1fd183b188d88a49b8359d89c2aec699" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7743356592<br>             <b>Средний EBIT:</b> 12 тыс. руб.<br>             <b>Адрес:</b> 125502, Г.МОСКВА, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ ХОВРИНО, УЛ ФЕСТИВАЛЬНАЯ, Д. 53А, СТР. 3, ЭТАЖ/КОМ./РМ 1/6/7Д         </div>         </div>`)[0];
+                popup_8a43f358628cee57679bba6ef9984fc3.setContent(html_1fd183b188d88a49b8359d89c2aec699);
+            
+        
+
+        circle_marker_ba3ea7426d89b23729a74341bbfb2f90.bindPopup(popup_8a43f358628cee57679bba6ef9984fc3)
+        ;
+
+        
+    
+    
+            circle_marker_ba3ea7426d89b23729a74341bbfb2f90.bindTooltip(
+                `<div>
+                     ИНН: 7743356592
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b16e5f043d8d1841c8893c1c4ae5d4b = L.circleMarker(
+                [59.993527, 30.249312],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_8ef90690980f3733d208eb3682662efc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a19dc153c2a6d1e72f70c71f2087841 = $(`<div id="html_8a19dc153c2a6d1e72f70c71f2087841" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7813059155<br>             <b>Средний EBIT:</b> 0 тыс. руб.<br>             <b>Адрес:</b> 197374, Г.САНКТ-ПЕТЕРБУРГ, УЛ. ОПТИКОВ, Д. 4А, К. 508, ПОМЕЩ. 6Н №287         </div>         </div>`)[0];
+                popup_8ef90690980f3733d208eb3682662efc.setContent(html_8a19dc153c2a6d1e72f70c71f2087841);
+            
+        
+
+        circle_marker_4b16e5f043d8d1841c8893c1c4ae5d4b.bindPopup(popup_8ef90690980f3733d208eb3682662efc)
+        ;
+
+        
+    
+    
+            circle_marker_4b16e5f043d8d1841c8893c1c4ae5d4b.bindTooltip(
+                `<div>
+                     ИНН: 7813059155
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f592697523b5658b72e0c9cfe74a5737 = L.circleMarker(
+                [64.5360784, 34.7739171],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_145c153c136711098c2d2fc102623e0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2ed361faf617d5424076fdb418be63d = $(`<div id="html_d2ed361faf617d5424076fdb418be63d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 1011005108<br>             <b>Средний EBIT:</b> -46 тыс. руб.<br>             <b>Адрес:</b> 186500, РЕСПУБЛИКА КАРЕЛИЯ, М.О. БЕЛОМОРСКИЙ, Г. БЕЛОМОРСК, УЛ. ПОРТОВОЕ ШОССЕ, Д. 25         </div>         </div>`)[0];
+                popup_145c153c136711098c2d2fc102623e0a.setContent(html_d2ed361faf617d5424076fdb418be63d);
+            
+        
+
+        circle_marker_f592697523b5658b72e0c9cfe74a5737.bindPopup(popup_145c153c136711098c2d2fc102623e0a)
+        ;
+
+        
+    
+    
+            circle_marker_f592697523b5658b72e0c9cfe74a5737.bindTooltip(
+                `<div>
+                     ИНН: 1011005108
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4395bd4fd329a138f960cd68d5b6c29d = L.circleMarker(
+                [51.2736453, 114.942242],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_888acb5f8551e24726cf7b173fec1141 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb5d5b276611b92f929f8a814fe87047 = $(`<div id="html_fb5d5b276611b92f929f8a814fe87047" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 8003021109<br>             <b>Средний EBIT:</b> -95 тыс. руб.<br>             <b>Адрес:</b> Забайкальский край, пгт Могойтуй, ул Первомайская, д 33         </div>         </div>`)[0];
+                popup_888acb5f8551e24726cf7b173fec1141.setContent(html_fb5d5b276611b92f929f8a814fe87047);
+            
+        
+
+        circle_marker_4395bd4fd329a138f960cd68d5b6c29d.bindPopup(popup_888acb5f8551e24726cf7b173fec1141)
+        ;
+
+        
+    
+    
+            circle_marker_4395bd4fd329a138f960cd68d5b6c29d.bindTooltip(
+                `<div>
+                     ИНН: 8003021109
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03937699e7737c95c89c2358b260b8d7 = L.circleMarker(
+                [54.7696623, 32.0705597],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_245ff9ede0f239a194ab38a5777ebdb9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92f5820180cb5743ffdc8658e475f6b4 = $(`<div id="html_92f5820180cb5743ffdc8658e475f6b4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 6731010189<br>             <b>Средний EBIT:</b> -709 тыс. руб.<br>             <b>Адрес:</b> г Смоленск, Трамвайный проезд, д 14, офис 105         </div>         </div>`)[0];
+                popup_245ff9ede0f239a194ab38a5777ebdb9.setContent(html_92f5820180cb5743ffdc8658e475f6b4);
+            
+        
+
+        circle_marker_03937699e7737c95c89c2358b260b8d7.bindPopup(popup_245ff9ede0f239a194ab38a5777ebdb9)
+        ;
+
+        
+    
+    
+            circle_marker_03937699e7737c95c89c2358b260b8d7.bindTooltip(
+                `<div>
+                     ИНН: 6731010189
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee744d94dcd60f11fbd7b6e826c1249f = L.circleMarker(
+                [56.0317776, 35.9459444],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_9f0a70bde6635e493fe42bbd2d8d7270 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c21128e38e1174f10c3c80cf77922111 = $(`<div id="html_c21128e38e1174f10c3c80cf77922111" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5004000089<br>             <b>Средний EBIT:</b> -770 тыс. руб.<br>             <b>Адрес:</b> Московская обл, г Волоколамск, Ново-Солдатский пер, стр 4         </div>         </div>`)[0];
+                popup_9f0a70bde6635e493fe42bbd2d8d7270.setContent(html_c21128e38e1174f10c3c80cf77922111);
+            
+        
+
+        circle_marker_ee744d94dcd60f11fbd7b6e826c1249f.bindPopup(popup_9f0a70bde6635e493fe42bbd2d8d7270)
+        ;
+
+        
+    
+    
+            circle_marker_ee744d94dcd60f11fbd7b6e826c1249f.bindTooltip(
+                `<div>
+                     ИНН: 5004000089
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_732974b755b9c25181c9cc8285bf63b2 = L.circleMarker(
+                [55.2733509, 47.5421665],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_88bc852998fd8769efc7fb51a661bd24 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3b44d7e9bb965cb3a2280395f3156e19 = $(`<div id="html_3b44d7e9bb965cb3a2280395f3156e19" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2108002261<br>             <b>Средний EBIT:</b> -1 123 тыс. руб.<br>             <b>Адрес:</b> Чувашская Республика - Чувашия, село Комсомольское, ул Мира, д 3Б         </div>         </div>`)[0];
+                popup_88bc852998fd8769efc7fb51a661bd24.setContent(html_3b44d7e9bb965cb3a2280395f3156e19);
+            
+        
+
+        circle_marker_732974b755b9c25181c9cc8285bf63b2.bindPopup(popup_88bc852998fd8769efc7fb51a661bd24)
+        ;
+
+        
+    
+    
+            circle_marker_732974b755b9c25181c9cc8285bf63b2.bindTooltip(
+                `<div>
+                     ИНН: 2108002261
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c7276b6eece4847a88c0cc168ea2a1c = L.circleMarker(
+                [57.626382, 39.8735854],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_cb90dcc6b2f0aa1ec343f6e6862840d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8499b20a9b8473824a4a1b61f513aa12 = $(`<div id="html_8499b20a9b8473824a4a1b61f513aa12" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7604156684<br>             <b>Средний EBIT:</b> -1 657 тыс. руб.<br>             <b>Адрес:</b> г Ярославль, ул Чайковского, д 40А, офис 305         </div>         </div>`)[0];
+                popup_cb90dcc6b2f0aa1ec343f6e6862840d0.setContent(html_8499b20a9b8473824a4a1b61f513aa12);
+            
+        
+
+        circle_marker_1c7276b6eece4847a88c0cc168ea2a1c.bindPopup(popup_cb90dcc6b2f0aa1ec343f6e6862840d0)
+        ;
+
+        
+    
+    
+            circle_marker_1c7276b6eece4847a88c0cc168ea2a1c.bindTooltip(
+                `<div>
+                     ИНН: 7604156684
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1bb421d3707f39342134be3f98ff4558 = L.circleMarker(
+                [55.694145, 37.665695],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_ddbc37eaa985eed60eefc27131e942d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e866e7009655eeb7f28017e70948b63c = $(`<div id="html_e866e7009655eeb7f28017e70948b63c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7743373485<br>             <b>Средний EBIT:</b> -2 283 тыс. руб.<br>             <b>Адрес:</b> г Москва, пр-кт Андропова, д 10, помещ 98         </div>         </div>`)[0];
+                popup_ddbc37eaa985eed60eefc27131e942d1.setContent(html_e866e7009655eeb7f28017e70948b63c);
+            
+        
+
+        circle_marker_1bb421d3707f39342134be3f98ff4558.bindPopup(popup_ddbc37eaa985eed60eefc27131e942d1)
+        ;
+
+        
+    
+    
+            circle_marker_1bb421d3707f39342134be3f98ff4558.bindTooltip(
+                `<div>
+                     ИНН: 7743373485
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f3e0eee7f03e9b78ca8fef78950b4bf = L.circleMarker(
+                [53.2372395, 34.3696881],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_252ea89085b430958922ea878e58601e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdd4e969c994747b4a61be18258d0650 = $(`<div id="html_cdd4e969c994747b4a61be18258d0650" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3250057750<br>             <b>Средний EBIT:</b> -2 391 тыс. руб.<br>             <b>Адрес:</b> г Брянск, ул Калинина, д 81         </div>         </div>`)[0];
+                popup_252ea89085b430958922ea878e58601e.setContent(html_cdd4e969c994747b4a61be18258d0650);
+            
+        
+
+        circle_marker_3f3e0eee7f03e9b78ca8fef78950b4bf.bindPopup(popup_252ea89085b430958922ea878e58601e)
+        ;
+
+        
+    
+    
+            circle_marker_3f3e0eee7f03e9b78ca8fef78950b4bf.bindTooltip(
+                `<div>
+                     ИНН: 3250057750
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f89a4c07cd4daa04d9242797326a279 = L.circleMarker(
+                [59.928686, 30.37062],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_09682acca660f3af892cb726c744cc4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_445dfac7ea0d38d9d449c720df84009d = $(`<div id="html_445dfac7ea0d38d9d449c720df84009d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7815014022<br>             <b>Средний EBIT:</b> -3 002 тыс. руб.<br>             <b>Адрес:</b> 191036, Г.САНКТ-ПЕТЕРБУРГ, ВН.ТЕР.Г. МУНИЦИПАЛЬНЫЙ ОКРУГ ЛИГОВКА-ЯМСКАЯ, ПР-КТ НЕВСКИЙ, Д. 111/3, ЛИТЕРА А, ПОМЕЩ. 31Н, КАБ. 400         </div>         </div>`)[0];
+                popup_09682acca660f3af892cb726c744cc4b.setContent(html_445dfac7ea0d38d9d449c720df84009d);
+            
+        
+
+        circle_marker_6f89a4c07cd4daa04d9242797326a279.bindPopup(popup_09682acca660f3af892cb726c744cc4b)
+        ;
+
+        
+    
+    
+            circle_marker_6f89a4c07cd4daa04d9242797326a279.bindTooltip(
+                `<div>
+                     ИНН: 7815014022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abfdebc7028794584570ebdb7890661f = L.circleMarker(
+                [50.6692997, 142.7561522],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_24f57792424a9955ab21c22a9ce3bd94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b930d08e2a40033e8b6c8b480a144f8 = $(`<div id="html_5b930d08e2a40033e8b6c8b480a144f8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 6517004027<br>             <b>Средний EBIT:</b> -3 804 тыс. руб.<br>             <b>Адрес:</b> 694404, САХАЛИНСКАЯ ОБЛАСТЬ, М.О. ТЫМОВСКИЙ, С. ЗОНАЛЬНОЕ, ПЕР. АВИАЦИОННЫЙ, ЗД. 4А         </div>         </div>`)[0];
+                popup_24f57792424a9955ab21c22a9ce3bd94.setContent(html_5b930d08e2a40033e8b6c8b480a144f8);
+            
+        
+
+        circle_marker_abfdebc7028794584570ebdb7890661f.bindPopup(popup_24f57792424a9955ab21c22a9ce3bd94)
+        ;
+
+        
+    
+    
+            circle_marker_abfdebc7028794584570ebdb7890661f.bindTooltip(
+                `<div>
+                     ИНН: 6517004027
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0072044893c6990e10f0044cbb9de3b6 = L.circleMarker(
+                [55.802761, 37.526007],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_f212b86c1a0cfb9f07a3ee7d1c21e7d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4a5e38399e77d35360f9cb834eb4603 = $(`<div id="html_b4a5e38399e77d35360f9cb834eb4603" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7714406538<br>             <b>Средний EBIT:</b> -4 290 тыс. руб.<br>             <b>Адрес:</b> г Москва, Ленинградский пр-кт, д 66, помещ 1Н         </div>         </div>`)[0];
+                popup_f212b86c1a0cfb9f07a3ee7d1c21e7d8.setContent(html_b4a5e38399e77d35360f9cb834eb4603);
+            
+        
+
+        circle_marker_0072044893c6990e10f0044cbb9de3b6.bindPopup(popup_f212b86c1a0cfb9f07a3ee7d1c21e7d8)
+        ;
+
+        
+    
+    
+            circle_marker_0072044893c6990e10f0044cbb9de3b6.bindTooltip(
+                `<div>
+                     ИНН: 7714406538
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4a57d28f8c143259d77ca308e7bab11 = L.circleMarker(
+                [56.0135765, 92.8885503],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_2ec021d3b48c41897486c895826e73a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d4b8d67bd414e0b3a1473725531a234 = $(`<div id="html_9d4b8d67bd414e0b3a1473725531a234" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2466000401<br>             <b>Средний EBIT:</b> -10 461 тыс. руб.<br>             <b>Адрес:</b> г Красноярск, пр-кт Мира, д 18         </div>         </div>`)[0];
+                popup_2ec021d3b48c41897486c895826e73a9.setContent(html_9d4b8d67bd414e0b3a1473725531a234);
+            
+        
+
+        circle_marker_b4a57d28f8c143259d77ca308e7bab11.bindPopup(popup_2ec021d3b48c41897486c895826e73a9)
+        ;
+
+        
+    
+    
+            circle_marker_b4a57d28f8c143259d77ca308e7bab11.bindTooltip(
+                `<div>
+                     ИНН: 2466000401
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8541206ac54a2f174dd2e13325ace12a = L.circleMarker(
+                [55.6626689, 37.745165],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_c758485ede612d1fb901f8459514f21c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d35d2a22353684ca485994dde9af2596 = $(`<div id="html_d35d2a22353684ca485994dde9af2596" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7720019008<br>             <b>Средний EBIT:</b> -10 556 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Верхние Поля, д 8, офис 66         </div>         </div>`)[0];
+                popup_c758485ede612d1fb901f8459514f21c.setContent(html_d35d2a22353684ca485994dde9af2596);
+            
+        
+
+        circle_marker_8541206ac54a2f174dd2e13325ace12a.bindPopup(popup_c758485ede612d1fb901f8459514f21c)
+        ;
+
+        
+    
+    
+            circle_marker_8541206ac54a2f174dd2e13325ace12a.bindTooltip(
+                `<div>
+                     ИНН: 7720019008
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5f6dbe9d1ab74b152184fd869633e37 = L.circleMarker(
+                [55.85269, 49.096344],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_7aca0c65c2bca33bffbf42af6f7d83eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4bcdfe9aaf76285ddf0d76afff3c0c6 = $(`<div id="html_a4bcdfe9aaf76285ddf0d76afff3c0c6" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 1653008582<br>             <b>Средний EBIT:</b> -13 235 тыс. руб.<br>             <b>Адрес:</b> 420127, РЕСПУБЛИКА ТАТАРСТАН (ТАТАРСТАН), Г. КАЗАНЬ, УЛ. ДЕМЕНТЬЕВА, ЗД. 2В, ОФИС А111         </div>         </div>`)[0];
+                popup_7aca0c65c2bca33bffbf42af6f7d83eb.setContent(html_a4bcdfe9aaf76285ddf0d76afff3c0c6);
+            
+        
+
+        circle_marker_d5f6dbe9d1ab74b152184fd869633e37.bindPopup(popup_7aca0c65c2bca33bffbf42af6f7d83eb)
+        ;
+
+        
+    
+    
+            circle_marker_d5f6dbe9d1ab74b152184fd869633e37.bindTooltip(
+                `<div>
+                     ИНН: 1653008582
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3d9df839bd2f7abf2bf9d41d01ae1ad = L.circleMarker(
+                [50.6228124, 38.6722554],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_c840546ad55add8941501d8057ed7389 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5644f871b4dcdc68505a88e5232e0ff5 = $(`<div id="html_5644f871b4dcdc68505a88e5232e0ff5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 3101000612<br>             <b>Средний EBIT:</b> -13 939 тыс. руб.<br>             <b>Адрес:</b> Белгородская обл, г Алексеевка, ул Пушкина, д 47         </div>         </div>`)[0];
+                popup_c840546ad55add8941501d8057ed7389.setContent(html_5644f871b4dcdc68505a88e5232e0ff5);
+            
+        
+
+        circle_marker_b3d9df839bd2f7abf2bf9d41d01ae1ad.bindPopup(popup_c840546ad55add8941501d8057ed7389)
+        ;
+
+        
+    
+    
+            circle_marker_b3d9df839bd2f7abf2bf9d41d01ae1ad.bindTooltip(
+                `<div>
+                     ИНН: 3101000612
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cd7a11715f46e2944afacd04723fcda = L.circleMarker(
+                [55.813516, 37.620419],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_fa3f79bc7fe0063a704eb585cb9a02a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4d81eabce445dc85442f59213e19aba2 = $(`<div id="html_4d81eabce445dc85442f59213e19aba2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7709008852<br>             <b>Средний EBIT:</b> -14 586 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Аргуновская, д 2 к 1, офис 1500         </div>         </div>`)[0];
+                popup_fa3f79bc7fe0063a704eb585cb9a02a8.setContent(html_4d81eabce445dc85442f59213e19aba2);
+            
+        
+
+        circle_marker_2cd7a11715f46e2944afacd04723fcda.bindPopup(popup_fa3f79bc7fe0063a704eb585cb9a02a8)
+        ;
+
+        
+    
+    
+            circle_marker_2cd7a11715f46e2944afacd04723fcda.bindTooltip(
+                `<div>
+                     ИНН: 7709008852
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fd7545df2cfdfe3484f141348dc31f3 = L.circleMarker(
+                [55.7396205, 37.6541549],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_9399d0aacd4f637ec9476f1801b45c28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80e2283f2d9655a4eb19b55c98e212c8 = $(`<div id="html_80e2283f2d9655a4eb19b55c98e212c8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7710478789<br>             <b>Средний EBIT:</b> -50 064 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Большие Каменщики, д 1         </div>         </div>`)[0];
+                popup_9399d0aacd4f637ec9476f1801b45c28.setContent(html_80e2283f2d9655a4eb19b55c98e212c8);
+            
+        
+
+        circle_marker_3fd7545df2cfdfe3484f141348dc31f3.bindPopup(popup_9399d0aacd4f637ec9476f1801b45c28)
+        ;
+
+        
+    
+    
+            circle_marker_3fd7545df2cfdfe3484f141348dc31f3.bindTooltip(
+                `<div>
+                     ИНН: 7710478789
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c962aafbacf488576554fb776756e961 = L.circleMarker(
+                [55.665789, 37.4707955],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_6022ae32013dff01297334c73432f493 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_723a0698eeaf2de5d8f85cd22a30397d = $(`<div id="html_723a0698eeaf2de5d8f85cd22a30397d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7706194960<br>             <b>Средний EBIT:</b> -51 945 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Покрышкина, д 8         </div>         </div>`)[0];
+                popup_6022ae32013dff01297334c73432f493.setContent(html_723a0698eeaf2de5d8f85cd22a30397d);
+            
+        
+
+        circle_marker_c962aafbacf488576554fb776756e961.bindPopup(popup_6022ae32013dff01297334c73432f493)
+        ;
+
+        
+    
+    
+            circle_marker_c962aafbacf488576554fb776756e961.bindTooltip(
+                `<div>
+                     ИНН: 7706194960
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e373f77e67813996e4985ab4b003d0b3 = L.circleMarker(
+                [64.5469759, 40.5217596],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_eebcd6ebfa59588d33fdf48d1f614042 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22cd6411fd4fb78fe9c6d83a3bf0411c = $(`<div id="html_22cd6411fd4fb78fe9c6d83a3bf0411c" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 2901030646<br>             <b>Средний EBIT:</b> -68 735 тыс. руб.<br>             <b>Адрес:</b> г Архангельск, ул Попова, д 17         </div>         </div>`)[0];
+                popup_eebcd6ebfa59588d33fdf48d1f614042.setContent(html_22cd6411fd4fb78fe9c6d83a3bf0411c);
+            
+        
+
+        circle_marker_e373f77e67813996e4985ab4b003d0b3.bindPopup(popup_eebcd6ebfa59588d33fdf48d1f614042)
+        ;
+
+        
+    
+    
+            circle_marker_e373f77e67813996e4985ab4b003d0b3.bindTooltip(
+                `<div>
+                     ИНН: 2901030646
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_da133267debe233f5bab94002b2b48ff = L.circleMarker(
+                [55.7343886, 37.5913667],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_96efaf193037bc6c57fbd2df16b2a5a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0005a54b42d7849834ea70fe79a47ce2 = $(`<div id="html_0005a54b42d7849834ea70fe79a47ce2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7704697207<br>             <b>Средний EBIT:</b> -86 327 тыс. руб.<br>             <b>Адрес:</b> г Москва, ул Тимура Фрунзе, д 16 стр 3         </div>         </div>`)[0];
+                popup_96efaf193037bc6c57fbd2df16b2a5a1.setContent(html_0005a54b42d7849834ea70fe79a47ce2);
+            
+        
+
+        circle_marker_da133267debe233f5bab94002b2b48ff.bindPopup(popup_96efaf193037bc6c57fbd2df16b2a5a1)
+        ;
+
+        
+    
+    
+            circle_marker_da133267debe233f5bab94002b2b48ff.bindTooltip(
+                `<div>
+                     ИНН: 7704697207
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f66f638205c0d8d32e68ee9575244d1 = L.circleMarker(
+                [55.8169269, 37.3291226],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_dd13fe12de8a025f9a9f03097c5b5650 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_382b9b9390392f76d2d3758f3a2fad87 = $(`<div id="html_382b9b9390392f76d2d3758f3a2fad87" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 7714938405<br>             <b>Средний EBIT:</b> -89 619 тыс. руб.<br>             <b>Адрес:</b> Московская обл, г Красногорск, ул Жуковского, д 6, помещ II         </div>         </div>`)[0];
+                popup_dd13fe12de8a025f9a9f03097c5b5650.setContent(html_382b9b9390392f76d2d3758f3a2fad87);
+            
+        
+
+        circle_marker_3f66f638205c0d8d32e68ee9575244d1.bindPopup(popup_dd13fe12de8a025f9a9f03097c5b5650)
+        ;
+
+        
+    
+    
+            circle_marker_3f66f638205c0d8d32e68ee9575244d1.bindTooltip(
+                `<div>
+                     ИНН: 7714938405
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dceaa2e5b0dcc8a3ba19187105cbadba = L.circleMarker(
+                [55.46745, 37.7350524],
+                {"bubblingMouseEvents": true, "color": "#d9534f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0ad4e", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_ab75c81f2e60e98441f1bfa47c9bcdfa);
+        
+    
+        var popup_b9fceac458e01c5c2b982362ee9216c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6ac0e8e355ba445bbb92d58b92d9990 = $(`<div id="html_b6ac0e8e355ba445bbb92d58b92d9990" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; font-size: 14px;">             <b>ИНН:</b> 5009106346<br>             <b>Средний EBIT:</b> 0 тыс. руб.<br>             <b>Адрес:</b> 142029, МОСКОВСКАЯ ОБЛАСТЬ, Г.О. ДОМОДЕДОВО, Г. ДОМОДЕДОВО, МКР. СЕВЕРНЫЙ, УЛ. ИНДУСТРИАЛЬНАЯ, СТР. 1, ПОМЕЩ. 5, КАБ. 406         </div>         </div>`)[0];
+                popup_b9fceac458e01c5c2b982362ee9216c1.setContent(html_b6ac0e8e355ba445bbb92d58b92d9990);
+            
+        
+
+        circle_marker_dceaa2e5b0dcc8a3ba19187105cbadba.bindPopup(popup_b9fceac458e01c5c2b982362ee9216c1)
+        ;
+
+        
+    
+    
+            circle_marker_dceaa2e5b0dcc8a3ba19187105cbadba.bindTooltip(
+                `<div>
+                     ИНН: 5009106346
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
